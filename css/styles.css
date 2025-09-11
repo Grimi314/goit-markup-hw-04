@@ -81,6 +81,23 @@ gap: 10px;
     gap: 40px;
 }
 
+.studio{
+    position: relative;
+}
+
+.studio:active:after {
+   content: "";
+   display: block;
+   width: 48px;
+  height: 2px;
+  background-color: #404bbf;
+  position: absolute;
+  left: 50%;
+  transform: translatex(-50%);
+  bottom: 4px;
+        }
+
+
 .nav-header{
  display: flex;
 align-items: center;
@@ -93,8 +110,7 @@ align-items: center;
     line-height: 1.5;
     letter-spacing: 0.02em;
     padding: 24px 0;
-
-   
+   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .page-nav-link:hover, .page-nav-link:focus{
@@ -125,8 +141,7 @@ gap: 40px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     padding: 24px 0;
-    
-
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .address .link:hover, .address .link:focus{
@@ -177,6 +192,7 @@ gap: 40px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button:hover, .button:focus{
   background-color: #404bbf;
@@ -293,6 +309,9 @@ overflow: hidden;
     background-color: #FFFFFF;
     width: calc((100% - 72px) / 4);
     border-radius: 0px 0px 4px 4px;
+   box-shadow:  0 2px 1px 0 rgba(46, 47, 66, 0.08),
+        0 1px 1px 0 rgba(46, 47, 66, 0.16),
+        0 1px 6px 0 rgba(46, 47, 66, 0.08);
     
 }
 .subtitle-section-time{
@@ -342,6 +361,11 @@ margin-bottom: 8px;
         justify-content: center;
         align-items: center;
         border-radius: 50%;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .icon-background:hover{
+        background-color: #31D0AA;
     }
       
  .title-section-protfolio{
@@ -356,9 +380,42 @@ margin-bottom: 8px;
 
  .list-item-section-portfolio{
     width: calc((100% - 48px) / 3);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
  }
-    
- 
+
+  .list-item-section-portfolio:hover{
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+    background: #fff;
+  }
+
+.list-item-section-portfolio:hover .hiden-text{
+    transform: translateY(0);
+    transition:transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+  .div-hiden-text{
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hiden-text{
+    font-weight: 400;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        color: #f4f4fd;
+        background-color: #404bbf;
+        height: 100%;
+        padding: 32px;
+        padding-top: 40px;
+       position: absolute;
+       top: 0;
+       left: 0;
+       transform: translateY(100%)
+       
+  }
+  
  .subtitle-section-protfolio{
     font-size: 20px;
     line-height: 1.2;
@@ -403,6 +460,8 @@ margin-bottom: 8px;
     padding-bottom: 100px;
     max-width: 1440px;
     display: flex;
+    position: relative;
+    
    
 }
 .footer-logo{
@@ -427,17 +486,19 @@ margin-bottom: 8px;
 }
 
 
-.footer-div{
-    display: flex;
-    flex-direction: column;
-    margin-right: 120px;
-    padding: 15px;}
 
 .container-footer{
     display: flex;
-    
-    
+    flex-direction: column;
+    position: absolute;
+    left: 600px;
+  
+   
 }
+
+    
+
+
 
 .div-icon-footer{
     display: flex;
@@ -455,10 +516,10 @@ margin-bottom: 8px;
     font-weight: 500;
 font-size: 16px;
 
-
 line-height: 1.5;
 letter-spacing: 0.02em;
 color: #fff;
+margin-bottom: 16px;
 }
 
 
