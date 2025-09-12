@@ -540,9 +540,9 @@ margin-bottom: 8px;
     background-color: #31d0aa;
  }
 
- .icon-background .link-icon-footer:focus {
-     background-color: #31d0aa;
- }
+.link-icon-footer:focus {
+    background-color: #31d0aa;
+}
 
   
 .text-footer-media{
