@@ -87,12 +87,11 @@ gap: 10px;
 .studio{
     color: #404bbf;
     position: relative;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition:color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .studio:active::after {
-   content: "";
-   display: block;
+   content:"";
    width: 48px;
   background-color: #404bbf;
   position: absolute;
@@ -116,7 +115,7 @@ align-items: center;
     line-height: 1.5;
     letter-spacing: 0.02em;
     padding: 24px 0;
-   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+   transition:color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .page-nav-link:hover, .page-nav-link:focus{
@@ -147,7 +146,7 @@ gap: 40px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     padding: 24px 0;
-   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+   transition:color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .address .link:hover, .address .link:focus{
@@ -296,7 +295,7 @@ overflow: hidden;
 }
 
 .div-section-time{
-    padding: 32px 0 8px 0;
+    padding: 32px 0;
     
 }
 
@@ -342,7 +341,7 @@ margin-bottom: 8px;
     }
 
         .icon-section-time {
-            fiil: #f4f4fd;
+            fill: #f4f4fd;
         }
 
     .lici-icon-sectionn-time{
@@ -360,18 +359,12 @@ margin-bottom: 8px;
 
     .icon-background{
         width: 40px;
-        height: 40px;
-        background-color: #404bbf;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-radius: 50%;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        height: 40px; 
+
     }
 
-    .icon-background:hover{
-        background-color: #31D0AA;
-    }
+
+    
 
         .link-icon{
             width: 100%;
@@ -381,7 +374,7 @@ margin-bottom: 8px;
             display: flex;
             justify-content: center;
             align-items: center;
-            
+            transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
         }
 
   .link-icon:hover{
@@ -404,7 +397,7 @@ margin-bottom: 8px;
 
  .list-item-section-portfolio{
     width: calc((100% - 48px) / 3);
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
  }
 
   .list-item-section-portfolio:hover{
@@ -414,8 +407,6 @@ margin-bottom: 8px;
 
 .list-item-section-portfolio:hover .hiden-text{
     transform: translateY(0);
-    transition:transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
 }
 
   .div-hiden-text{
@@ -429,15 +420,15 @@ margin-bottom: 8px;
         line-height: 1.5;
         letter-spacing: 0.02em;
         color: #f4f4fd;
-        background-color: #404bbf;
+        background-color: #4d5ae5;
         height: 100%;
-        padding: 32px;
-        padding-top: 40px;
+        width: 100%;
+        padding: 40px 32px;
        position: absolute;
        top: 0;
        left: 0;
+        transition: translateY 250ms cubic-bezier(0.4, 0, 0.2, 1);
        transform: translateY(100%)
-       
   }
   
  .subtitle-section-protfolio{
@@ -521,28 +512,41 @@ margin-bottom: 8px;
 }
 
     
-
-
-
-.div-icon-footer{
+.list-icon-footer{
     display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    flex-direction: row;
     gap: 16px;
 }
 
-.icon-section-footer{
-    fill: #FFFFFF;
-}
+ .icon-section-footer {
+     fill: #f4f4fd;
+ }
+
+ .link-icon-footer{
+     width: 100%;
+     height: 100%;
+     background-color: #4d5ae5;
+     border-radius: 50%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+ }
+
+ .link-icon-footer:hover{
+    background-color: #31d0aa;
+ }
+
+ .link-icon-footer:active{
+    background-color: #31d0aa;
+ }
+
 
 .text-footer-media{
     font-weight: 500;
 font-size: 16px;
-
 line-height: 1.5;
 letter-spacing: 0.02em;
-color: #fff;
+color: #FFFFFF;
 margin-bottom: 16px;
 }
 
