@@ -87,10 +87,9 @@ gap: 10px;
 .studio{
     position: relative;
     color: #404bbf;
-    transition:color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.studio:active::after {
+.studio::after {
   content: "";
   position: absolute;
   background-color: #404bbf;
@@ -378,7 +377,7 @@ margin-bottom: 8px;
     background-color: #404bbf;
   }
 
- .link-icon:active{
+ .link-icon:focus{
     background-color: #404bbf;
   }
       
@@ -540,7 +539,7 @@ margin-bottom: 8px;
     background-color: #31d0aa;
  }
 
- .link-icon-footer:active{
+ .link-icon-footer:focus{
     background-color: #31d0aa;
  }
 
